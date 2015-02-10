@@ -75,12 +75,6 @@
 //    );
 //  };
 //  
-/*
-importScripts('ipdl.js');
-importScripts('bridge.js');
-importScripts('protocol.js');
-*/
-
 import BrigeHelper from 'dist/bridge.js';
 import IPDL from 'dist/ipdl.js';
 import Protocol from 'dist/protocol.js';
