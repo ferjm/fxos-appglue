@@ -1,7 +1,10 @@
 'use strict';
 
-importScripts('message.js');
-importScripts('store.js');
+import {
+  Message, CallMessage, SuccessMessage, FailureMessage
+} from 'dist/message.js';
+
+import PromiseStore from 'dist/store.js';
 
 var Protocol = function(methods, bridge) {
   this.store = new PromiseStore();
@@ -62,3 +65,4 @@ Protocol.prototype.onMethodRejectAfterBridge = function(uuid, rv) {
   this.bridge.postMessage(msg);
 };
 
+export default Protocol;

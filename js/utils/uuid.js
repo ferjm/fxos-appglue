@@ -11,3 +11,5 @@ function generateUUID(){
     }
   );
 };
+
+export default generateUUID;

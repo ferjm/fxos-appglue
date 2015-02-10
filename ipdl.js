@@ -1,6 +1,6 @@
 'use strict';
 
-importScripts('ipdl_parser.js');
+import parser from 'dist/ipdl_parser.js';
 
 function IPDL(name) {
   var ast = parser.parse(this._getFileContent(name));
@@ -61,3 +61,5 @@ IPDL.prototype._getFileContent = function(name) {
 
   return xhr.responseText;
 };
+
+export default IPDL;

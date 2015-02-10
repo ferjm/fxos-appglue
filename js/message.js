@@ -1,8 +1,8 @@
 'use strict';
 
-importScripts('utils/uuid.js');
+import uuid from 'dist/utils/uuid.js';
 
-function Message(tag, uuid) {
+export function Message(tag, uuid) {
   if (!tag) {
     throw new Error('Message: |tag| is required.');
   }
@@ -18,21 +18,21 @@ function Message(tag, uuid) {
   Object.freeze(this);
 };
 
-function CallMessage(tag, method, args) {
+export function CallMessage(tag, method, args) {
   this.method = method;
   this.args = args;
 
   Message.call(this, tag, generateUUID());
 };
 
-function SuccessMessage(tag, uuid, rv) {
+export function SuccessMessage(tag, uuid, rv) {
   this.rv = rv;
   this.success = true;
 
   Message.call(this, tag, uuid);
 };
 
-function FailureMessage(tag, uuid, rv) {
+export function FailureMessage(tag, uuid, rv) {
   this.rv = rv;
   this.success = false;
 

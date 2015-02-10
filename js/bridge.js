@@ -222,3 +222,4 @@ BridgeServiceWorkerToWindow.prototype.forwardMessage = function(json) {
   });
 };
 
+export default BridgeHelper;

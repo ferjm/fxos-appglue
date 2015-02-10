@@ -42,3 +42,4 @@ PromiseStore.prototype.resolve = function(uuid, success, rv) {
   this.delete(uuid);
 };
 
+export default PromiseStore;

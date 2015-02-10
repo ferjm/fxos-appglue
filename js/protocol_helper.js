@@ -75,16 +75,25 @@
 //    );
 //  };
 //  
-
+/*
 importScripts('ipdl.js');
 importScripts('bridge.js');
 importScripts('protocol.js');
+*/
 
-var IPDLProtocol = function(name, target) {
-  var ipdl = new IPDL(name);
-  var bridge = BridgeHelper.createNewBridge(name, ipdl, target);
-  var protocol = new Protocol(ipdl.side.binding, bridge);
+import BrigeHelper from 'dist/bridge.js';
+import IPDL from 'dist/ipdl.js';
+import Protocol from 'dist/protocol.js';
 
-  return ipdl.side.binding;
+export default class IPDLProtocol {
+  constructor(name, target) {  
+    var ipdl = new IPDL(name);
+    var bridge = BridgeHelper.createNewBridge(name, ipdl, target);
+    var protocol = new Protocol(ipdl.side.binding, bridge);
+
+    console.log('IPDLProtocol');
+    return ipdl.side.binding;
+  }
 };
 
+export default IPDLProtocol;
