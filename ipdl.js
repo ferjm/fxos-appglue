@@ -51,7 +51,7 @@ IPDL.prototype.getOtherSide = function(sides) {
 IPDL.prototype._getFileContent = function(name) {
   var xhr = new XMLHttpRequest();
   var filename =
-    'ipdl/' +
+    'IPDL_PATH' +
     'P' +
     name.charAt(0).toUpperCase() + name.slice(1) +
     '.ipdl';
