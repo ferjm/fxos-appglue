@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Firefox OS communication layer gulp task",
   "license": "MPL",
-  "repository": "http://github.com/ferjm/gulp-fxos-appglue",
+  "repository": "http://github.com/ferjm/fxos-appglue",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -12,13 +12,6 @@
   ],
   "dependencies": {
     "gulp-util": "^3.0.1",
-    "through2": "^0.6.3"
-  },
-  "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-6to5": "^3.0.0",
-    "gulp-replace": "^0.5.2",
-    "gulp-util": "^3.0.3",
-    "run-sequence": "^1.0.2"
+    "gulp-replace": "^0.5.2"
   }
 }
