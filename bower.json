@@ -1,14 +1,11 @@
 {
   "name": "fxos-appglue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Communication layer for FxOS apps",
   "license": "MPL",
   "homepage": "https://github.com/fxos/appglue",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ]
 }
