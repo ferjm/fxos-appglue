@@ -1,6 +1,6 @@
 'use strict';
 
-import uuid from 'dist/utils/uuid.js';
+import uuid from 'js/utils/uuid.js';
 
 export function Message(tag, uuid) {
   if (!tag) {

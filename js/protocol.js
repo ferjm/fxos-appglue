@@ -2,9 +2,9 @@
 
 import {
   Message, CallMessage, SuccessMessage, FailureMessage
-} from 'dist/message.js';
+} from 'js/message.js';
 
-import PromiseStore from 'dist/store.js';
+import PromiseStore from 'js/store.js';
 
 var Protocol = function(methods, bridge) {
   this.store = new PromiseStore();

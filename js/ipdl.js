@@ -1,6 +1,6 @@
 'use strict';
 
-import parser from 'dist/ipdl_parser.js';
+import parser from 'js/ipdl_parser.js';
 
 function IPDL(name) {
   var ast = parser.parse(this._getFileContent(name));

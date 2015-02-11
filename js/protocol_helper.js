@@ -75,17 +75,15 @@
 //    );
 //  };
 //  
-import BrigeHelper from 'dist/bridge.js';
-import IPDL from 'dist/ipdl.js';
-import Protocol from 'dist/protocol.js';
+import BrigeHelper from 'js/bridge.js';
+import IPDL from 'js/ipdl.js';
+import Protocol from 'js/protocol.js';
 
 export default class IPDLProtocol {
   constructor(name, target) {  
     var ipdl = new IPDL(name);
     var bridge = BridgeHelper.createNewBridge(name, ipdl, target);
     var protocol = new Protocol(ipdl.side.binding, bridge);
-
-    console.log('IPDLProtocol');
     return ipdl.side.binding;
   }
 };
